@@ -19,7 +19,7 @@ public class BucketController {
     }
 
     @GetMapping("/add")
-    public Item[] add(@RequestParam(value = "ID") Integer... IDs) {
+    public List<Item> add(@RequestParam(value = "ID") Integer... IDs) {
         return bucketService.add(IDs);
     }
 

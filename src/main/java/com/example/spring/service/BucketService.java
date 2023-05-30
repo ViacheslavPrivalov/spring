@@ -5,7 +5,7 @@ import com.example.spring.model.Item;
 import java.util.List;
 
 public interface BucketService {
-    Item[] add(Integer... IDs);
+    List<Item> add(Integer... IDs);
 
     List<Item> get();
 }
